@@ -7,10 +7,32 @@
 //  these are moving objects that the players avoid
 //  seven zones to avoid
 import Foundation
-enum ObjectTypes
+import SpriteKit
+enum ObsticleTypes: UInt32
 {
-    case Truck,Car
+    case Truck = 0
+    case Car
+    
+    var speed: CGFloat {
+        switch self {
+        case .Truck:
+            return 10.0
+        case .Car:
+            return 15.0
+            
+        }
+    }
 }
 class Obsticle: MovableObject {
+    let type: ObsticleTypes
+    var vel : CGPoint?
+    init(startPosition: CGPoint, type: ObsticleTypes) {
+                    self.type = type
+            //super.init(imageName: Zombie.defaultTexture)
+    }
     
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
 }
