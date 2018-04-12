@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EFAE1CC1207FF2A800B3EAB7 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAE1CC0207FF2A800B3EAB7 /* StoreKit.framework */; };
+		EFAE1CC3207FF2D200B3EAB7 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAE1CC2207FF2D200B3EAB7 /* libicucore.tbd */; };
+		EFAE1CC5207FF35700B3EAB7 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAE1CC4207FF35700B3EAB7 /* libsqlite3.tbd */; };
+		EFAE1CCF207FF70500B3EAB7 /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAE1CC8207FF70500B3EAB7 /* FirebaseAnalytics.framework */; };
+		EFAE1CD0207FF70500B3EAB7 /* FirebaseCoreDiagnostics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAE1CC9207FF70500B3EAB7 /* FirebaseCoreDiagnostics.framework */; };
+		EFAE1CD1207FF70500B3EAB7 /* FirebaseInstanceID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAE1CCA207FF70500B3EAB7 /* FirebaseInstanceID.framework */; };
+		EFAE1CD2207FF70500B3EAB7 /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAE1CCB207FF70500B3EAB7 /* nanopb.framework */; };
+		EFAE1CD3207FF70500B3EAB7 /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAE1CCC207FF70500B3EAB7 /* FirebaseCore.framework */; };
+		EFAE1CD4207FF70500B3EAB7 /* FirebaseNanoPB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAE1CCD207FF70500B3EAB7 /* FirebaseNanoPB.framework */; };
+		EFAE1CD5207FF70500B3EAB7 /* GoogleToolboxForMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAE1CCE207FF70500B3EAB7 /* GoogleToolboxForMac.framework */; };
+		EFAE1CD8207FF71E00B3EAB7 /* FirebaseDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAE1CD6207FF71E00B3EAB7 /* FirebaseDatabase.framework */; };
+		EFAE1CD9207FF71E00B3EAB7 /* leveldb-library.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAE1CD7207FF71E00B3EAB7 /* leveldb-library.framework */; };
+		EFAE1CDF207FF95D00B3EAB7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EFAE1CDE207FF95D00B3EAB7 /* GoogleService-Info.plist */; };
+		EFAE1CE1207FFA3300B3EAB7 /* GameObjectDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAE1CE0207FFA3300B3EAB7 /* GameObjectDB.swift */; };
 		EFAFC1F42076AA1E005DF34A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFAFC1F32076AA1E005DF34A /* AppDelegate.swift */; };
 		EFAFC1F62076AA1E005DF34A /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = EFAFC1F52076AA1E005DF34A /* GameScene.sks */; };
 		EFAFC1F82076AA1E005DF34A /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = EFAFC1F72076AA1E005DF34A /* Actions.sks */; };
@@ -27,6 +41,23 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EFAE1CB8207FE82900B3EAB7 /* Utilities */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Utilities; path = /Users/n01113752/Documents/GitHub/Crosser/Crosser/Utilities; sourceTree = "<absolute>"; };
+		EFAE1CBD207FF1AA00B3EAB7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EFAE1CC0207FF2A800B3EAB7 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		EFAE1CC2207FF2D200B3EAB7 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		EFAE1CC4207FF35700B3EAB7 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		EFAE1CC8207FF70500B3EAB7 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		EFAE1CC9207FF70500B3EAB7 /* FirebaseCoreDiagnostics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseCoreDiagnostics.framework; sourceTree = "<group>"; };
+		EFAE1CCA207FF70500B3EAB7 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		EFAE1CCB207FF70500B3EAB7 /* nanopb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = nanopb.framework; sourceTree = "<group>"; };
+		EFAE1CCC207FF70500B3EAB7 /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = "<group>"; };
+		EFAE1CCD207FF70500B3EAB7 /* FirebaseNanoPB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseNanoPB.framework; sourceTree = "<group>"; };
+		EFAE1CCE207FF70500B3EAB7 /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleToolboxForMac.framework; sourceTree = "<group>"; };
+		EFAE1CD6207FF71E00B3EAB7 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseDatabase.framework; sourceTree = "<group>"; };
+		EFAE1CD7207FF71E00B3EAB7 /* leveldb-library.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "leveldb-library.framework"; sourceTree = "<group>"; };
+		EFAE1CDA207FF7D400B3EAB7 /* Firebase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Firebase.h; sourceTree = "<group>"; };
+		EFAE1CDE207FF95D00B3EAB7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EFAE1CE0207FFA3300B3EAB7 /* GameObjectDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameObjectDB.swift; sourceTree = "<group>"; };
 		EFAFC1F02076AA1E005DF34A /* Crosser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crosser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFAFC1F32076AA1E005DF34A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFAFC1F52076AA1E005DF34A /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -53,17 +84,58 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFAE1CD4207FF70500B3EAB7 /* FirebaseNanoPB.framework in Frameworks */,
+				EFAE1CCF207FF70500B3EAB7 /* FirebaseAnalytics.framework in Frameworks */,
+				EFAE1CD1207FF70500B3EAB7 /* FirebaseInstanceID.framework in Frameworks */,
+				EFAE1CC5207FF35700B3EAB7 /* libsqlite3.tbd in Frameworks */,
+				EFAE1CD2207FF70500B3EAB7 /* nanopb.framework in Frameworks */,
+				EFAE1CD9207FF71E00B3EAB7 /* leveldb-library.framework in Frameworks */,
+				EFAE1CD3207FF70500B3EAB7 /* FirebaseCore.framework in Frameworks */,
+				EFAE1CD0207FF70500B3EAB7 /* FirebaseCoreDiagnostics.framework in Frameworks */,
+				EFAE1CC3207FF2D200B3EAB7 /* libicucore.tbd in Frameworks */,
+				EFAE1CD8207FF71E00B3EAB7 /* FirebaseDatabase.framework in Frameworks */,
+				EFAE1CC1207FF2A800B3EAB7 /* StoreKit.framework in Frameworks */,
+				EFAE1CD5207FF70500B3EAB7 /* GoogleToolboxForMac.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EFAE1CBF207FF2A800B3EAB7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EFAE1CD6207FF71E00B3EAB7 /* FirebaseDatabase.framework */,
+				EFAE1CD7207FF71E00B3EAB7 /* leveldb-library.framework */,
+				EFAE1CC8207FF70500B3EAB7 /* FirebaseAnalytics.framework */,
+				EFAE1CCC207FF70500B3EAB7 /* FirebaseCore.framework */,
+				EFAE1CC9207FF70500B3EAB7 /* FirebaseCoreDiagnostics.framework */,
+				EFAE1CCA207FF70500B3EAB7 /* FirebaseInstanceID.framework */,
+				EFAE1CCD207FF70500B3EAB7 /* FirebaseNanoPB.framework */,
+				EFAE1CCE207FF70500B3EAB7 /* GoogleToolboxForMac.framework */,
+				EFAE1CCB207FF70500B3EAB7 /* nanopb.framework */,
+				EFAE1CC4207FF35700B3EAB7 /* libsqlite3.tbd */,
+				EFAE1CC2207FF2D200B3EAB7 /* libicucore.tbd */,
+				EFAE1CC0207FF2A800B3EAB7 /* StoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EFAE1CDB207FF81000B3EAB7 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				EFAE1CBD207FF1AA00B3EAB7 /* GoogleService-Info.plist */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 		EFAFC1E72076AA1E005DF34A = {
 			isa = PBXGroup;
 			children = (
 				EFAFC1F22076AA1E005DF34A /* Crosser */,
 				EFAFC1F12076AA1E005DF34A /* Products */,
+				EFAE1CBF207FF2A800B3EAB7 /* Frameworks */,
+				EFAE1CDB207FF81000B3EAB7 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,8 +155,10 @@
 				EFAFC1F72076AA1E005DF34A /* Actions.sks */,
 				EFAFC1F92076AA1E005DF34A /* GameScene.swift */,
 				EFAFC1FB2076AA1E005DF34A /* GameViewController.swift */,
+				EFAE1CDA207FF7D400B3EAB7 /* Firebase.h */,
 				EFAFC1FD2076AA1E005DF34A /* Main.storyboard */,
 				EFAFC2002076AA1E005DF34A /* Assets.xcassets */,
+				EFAE1CDE207FF95D00B3EAB7 /* GoogleService-Info.plist */,
 				EFAFC2022076AA1E005DF34A /* LaunchScreen.storyboard */,
 				EFAFC2052076AA1E005DF34A /* Info.plist */,
 				EFAFC20B2076AFE8005DF34A /* GameObject.swift */,
@@ -96,6 +170,8 @@
 				EFAFC2112076B4F6005DF34A /* Obsticle.swift */,
 				EFAFC2132076B543005DF34A /* Moving platform.swift */,
 				EFAFC2192076B8C5005DF34A /* GameObjectFactory.swift */,
+				EFAE1CB8207FE82900B3EAB7 /* Utilities */,
+				EFAE1CE0207FFA3300B3EAB7 /* GameObjectDB.swift */,
 			);
 			path = Crosser;
 			sourceTree = "<group>";
@@ -164,6 +240,7 @@
 				EFAFC2012076AA1E005DF34A /* Assets.xcassets in Resources */,
 				EFAFC2042076AA1E005DF34A /* LaunchScreen.storyboard in Resources */,
 				EFAFC1F82076AA1E005DF34A /* Actions.sks in Resources */,
+				EFAE1CDF207FF95D00B3EAB7 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +261,7 @@
 				EFAFC2202076C239005DF34A /* MovableObject.swift in Sources */,
 				EFAFC1FC2076AA1E005DF34A /* GameViewController.swift in Sources */,
 				EFAFC2102076B04E005DF34A /* Player.swift in Sources */,
+				EFAE1CE1207FFA3300B3EAB7 /* GameObjectDB.swift in Sources */,
 				EFAFC1F42076AA1E005DF34A /* AppDelegate.swift in Sources */,
 				EFAFC21A2076B8C5005DF34A /* GameObjectFactory.swift in Sources */,
 			);
@@ -323,8 +401,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Crosser/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = DKR.Crosser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -337,8 +423,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Crosser/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lc++",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = DKR.Crosser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

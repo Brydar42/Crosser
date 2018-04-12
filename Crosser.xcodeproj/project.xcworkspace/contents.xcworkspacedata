@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Crosser.xcodeproj">
+      location = "group:/Users/n01113752/Documents/GitHub/Crosser/Crosser/Utilities">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>
