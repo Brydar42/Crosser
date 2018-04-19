@@ -12,14 +12,14 @@ struct GameObjectFactory {
     ///
     /// - Parameter zombieType: optional ZombieType, if no ZombieType is provided will make a random zombie
     /// - Returns: a Zombie
-    func makeObsticle(Obsticle: ObsticleTypes?) -> Obsticle {
+    func makeObsticle(Obsticles: ObsticleTypes?) -> Obsticle {
         
-        guard let Obsticle = Obsticle else {
+        guard let Obsticles = Obsticles else {
             
             return randomObsticle()
         }
         
-        return Obsticle(startPosition:0,0,type: Obsticle)
+        return Obsticle (startPosition:0,0,type: Obsticles)
     }
     
     /// creates a random Obsticle
@@ -37,16 +37,16 @@ struct GameObjectFactory {
         // this is considered unsafe hence the complier warning
         // which is supressed with the "!"
         //pos1,pos2,pos3,pos4,pos5,pos6
-        return Obsticle(type: ObsticleTypes!)
+        return Obsticle(startPosition: 0,0, type: ObjectType!)
     }
-    func makeMovingPlatform(MovingPlatform: PlatformTypes?) -> Obsticle {
+    func makeMovingPlatform( MovingPlatform: PlatformTypes?) -> Obsticle {
         
-        guard let PlatformTypes = PlatformTypes else {
+        guard let MovingPlatform = MovingPlatform else {
             
             return randomPlatform()
         }
         
-        return MovingPlatform(type: PlatformTypes)
+        return MovingPlatform (startPosition:0,0, type: PlatformTypes)
     }
     
     /// creates a random Obsticle
@@ -63,7 +63,7 @@ struct GameObjectFactory {
         // and asks us to unwrap it.
         // this is considered unsafe hence the complier warning
         // which is supressed with the "!"
-        return MovingPlatform(type: PlatformTypes!)
+        return MovingPlatform(startPosition:0,0, type: PlatformTypes!)
     }
     
 }

@@ -28,7 +28,6 @@ class GameScene: SKScene {
             label.alpha = 0.0
             label.run(SKAction.fadeIn(withDuration: 2.0))
         }
-        
     }
     
     
@@ -59,19 +58,19 @@ class GameScene: SKScene {
         }
         if(touch.location(in: self).y>0)
         {
-            //Player.JumpUp
+            Player.JumpUp()
         }
         if(touch.location(in: self).y<0)
         {
-            //Player.JumpDown
+            Player.JumpDown()
         }
         if(touch.location(in: self).x<0)
         {
-            //Player.JumpLeft
+            Player.JumpLeft()
         }
         if(touch.location(in: self).x>0)
         {
-            //Player.JumpRight
+            Player.JumpRight()
         }
         
         

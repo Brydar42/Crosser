@@ -15,11 +15,11 @@ class MovableObject: GameObject {
         // calling super so we can use deltaTime recording in the super class
         //super.update(currentTime)
         
-        guard let direction = vel?.asUnitVector else {
-            return
-        }
+        //guard let direction = vel?.asUnitVector else {
+       //     return
+       // }
         
-        position = position.travel(inDirection: direction, atVelocity: type.speed, for: deltaTime)
+        //position = position.travel(inDirection: direction, atVelocity: type.speed, for: deltaTime)
         //if lookUpAction(Zombie.ActionDescriptionKeys.loopedWalkAnimation)?.state == .running {
         //    position = position.travel(in: direction, at: type.speed, for: deltaTime)
         //}

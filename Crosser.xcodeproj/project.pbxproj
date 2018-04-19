@@ -126,6 +126,20 @@
 			path = Factory;
 			sourceTree = "<group>";
 		};
+		EF0679CF20893CC200A0FFFF /* Particle */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Particle;
+			sourceTree = "<group>";
+		};
+		EF0679D020893D8700A0FFFF /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
 		EFAE1CBF207FF2A800B3EAB7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +179,8 @@
 		EFAFC1F22076AA1E005DF34A /* Crosser */ = {
 			isa = PBXGroup;
 			children = (
+				EF0679D020893D8700A0FFFF /* Actions */,
+				EF0679CF20893CC200A0FFFF /* Particle */,
 				EF0679CD2089399800A0FFFF /* GameObjects */,
 				EFAFC1F32076AA1E005DF34A /* AppDelegate.swift */,
 				EFAFC1F52076AA1E005DF34A /* GameScene.sks */,

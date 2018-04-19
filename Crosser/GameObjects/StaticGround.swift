@@ -13,7 +13,7 @@ import SpriteKit
 class StaticGround: SKSpriteNode {
     
     
-    let Shape = CGRect(x: 0,y:-350, width: 700,height: 700)
+    let Shape = CGRect(x: 0,y:-320, width: 320,height: 320)
     //init() {
         //super.init(texture: , color: UIColor.clear, size:CGSize.init(width: 700, height: 700))
     //}

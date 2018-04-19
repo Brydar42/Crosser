@@ -24,7 +24,7 @@ enum PlatformTypes: UInt32{
 }
 class MovingPlatform: MovableObject {
     let type: PlatformTypes
-    var vel : CGPoint?
+    //var vel : CGPoint?
     init(startPosition: CGPoint, type: PlatformTypes) {
         self.type = type
         //super.init(imageName: Zombie.defaultTexture)

@@ -25,7 +25,7 @@ public enum ObsticleTypes: UInt32
 }
 class Obsticle: MovableObject {
     let type: ObsticleTypes
-    var vel : CGPoint?
+    //override var vel : CGPoint?
     init(startPosition: CGPoint, type: ObsticleTypes) {
                     self.type = type
             //super.init(imageName: Zombie.defaultTexture)

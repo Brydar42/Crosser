@@ -12,5 +12,7 @@ class DeathZone: StaticGround {
     func Killplayer() {
         //player lands here and dies
     }
-    override var position: CGPoint
+    override var position: CGPoint(x:0,y:320)
+    //self.position = CGPoint(x:0,y:320)
+    
 }
