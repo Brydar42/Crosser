@@ -13,11 +13,11 @@ import SpriteKit
 class StaticGround: SKSpriteNode {
     
     
-    
-    /*init() {
-        super.init(texture: , color: UIColor.clear, size:)
-    }
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }*/
+    let Shape = CGRect(x: 0,y:-350, width: 700,height: 700)
+    //init() {
+        //super.init(texture: , color: UIColor.clear, size:CGSize.init(width: 700, height: 700))
+    //}
+    //required init?(coder aDecoder: NSCoder) {
+    //    fatalError("init(coder:) has not been implemented")
+    //}
 }

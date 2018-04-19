@@ -7,19 +7,19 @@
 //  A factory dedicated to making Game Objecets
 
 import Foundation
-class GameObjectFactory {
+struct GameObjectFactory {
     /// makes a Obsticle
     ///
     /// - Parameter zombieType: optional ZombieType, if no ZombieType is provided will make a random zombie
     /// - Returns: a Zombie
     func makeObsticle(Obsticle: ObsticleTypes?) -> Obsticle {
         
-        guard let ObjectType = ObjectType else {
+        guard let Obsticle = Obsticle else {
             
             return randomObsticle()
         }
         
-        return Obsticle(type: ObjectType)
+        return Obsticle(startPosition:0,0,type: Obsticle)
     }
     
     /// creates a random Obsticle
@@ -36,16 +36,17 @@ class GameObjectFactory {
         // and asks us to unwrap it.
         // this is considered unsafe hence the complier warning
         // which is supressed with the "!"
+        //pos1,pos2,pos3,pos4,pos5,pos6
         return Obsticle(type: ObsticleTypes!)
     }
-    func makeMovingPlatform(Obsticle: ObsticleTypes?) -> Obsticle {
+    func makeMovingPlatform(MovingPlatform: PlatformTypes?) -> Obsticle {
         
-        guard let ObjectType = ObjectType else {
+        guard let PlatformTypes = PlatformTypes else {
             
             return randomPlatform()
         }
         
-        return MovingPlatform(type: ObjectType)
+        return MovingPlatform(type: PlatformTypes)
     }
     
     /// creates a random Obsticle

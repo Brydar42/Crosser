@@ -42,7 +42,6 @@
 
 /* Begin PBXFileReference section */
 		EFAE1CB8207FE82900B3EAB7 /* Utilities */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Utilities; path = /Users/n01113752/Documents/GitHub/Crosser/Crosser/Utilities; sourceTree = "<absolute>"; };
-		EFAE1CBD207FF1AA00B3EAB7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EFAE1CC0207FF2A800B3EAB7 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		EFAE1CC2207FF2D200B3EAB7 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
 		EFAE1CC4207FF35700B3EAB7 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
@@ -102,6 +101,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EF0679CD2089399800A0FFFF /* GameObjects */ = {
+			isa = PBXGroup;
+			children = (
+				EFAE1CE0207FFA3300B3EAB7 /* GameObjectDB.swift */,
+				EF0679CE208939B900A0FFFF /* Factory */,
+				EFAFC20B2076AFE8005DF34A /* GameObject.swift */,
+				EFAFC2152076B5F3005DF34A /* StaticGround.swift */,
+				EFAFC21B2076B901005DF34A /* DeathZone.swift */,
+				EFAFC21D2076C084005DF34A /* Victory zone.swift */,
+				EFAFC21F2076C239005DF34A /* MovableObject.swift */,
+				EFAFC20F2076B04E005DF34A /* Player.swift */,
+				EFAFC2112076B4F6005DF34A /* Obsticle.swift */,
+				EFAFC2132076B543005DF34A /* Moving platform.swift */,
+			);
+			path = GameObjects;
+			sourceTree = "<group>";
+		};
+		EF0679CE208939B900A0FFFF /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				EFAFC2192076B8C5005DF34A /* GameObjectFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
 		EFAE1CBF207FF2A800B3EAB7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,21 +145,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		EFAE1CDB207FF81000B3EAB7 /* Recovered References */ = {
-			isa = PBXGroup;
-			children = (
-				EFAE1CBD207FF1AA00B3EAB7 /* GoogleService-Info.plist */,
-			);
-			name = "Recovered References";
-			sourceTree = "<group>";
-		};
 		EFAFC1E72076AA1E005DF34A = {
 			isa = PBXGroup;
 			children = (
 				EFAFC1F22076AA1E005DF34A /* Crosser */,
 				EFAFC1F12076AA1E005DF34A /* Products */,
 				EFAE1CBF207FF2A800B3EAB7 /* Frameworks */,
-				EFAE1CDB207FF81000B3EAB7 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,6 +165,7 @@
 		EFAFC1F22076AA1E005DF34A /* Crosser */ = {
 			isa = PBXGroup;
 			children = (
+				EF0679CD2089399800A0FFFF /* GameObjects */,
 				EFAFC1F32076AA1E005DF34A /* AppDelegate.swift */,
 				EFAFC1F52076AA1E005DF34A /* GameScene.sks */,
 				EFAFC1F72076AA1E005DF34A /* Actions.sks */,
@@ -161,17 +177,7 @@
 				EFAE1CDE207FF95D00B3EAB7 /* GoogleService-Info.plist */,
 				EFAFC2022076AA1E005DF34A /* LaunchScreen.storyboard */,
 				EFAFC2052076AA1E005DF34A /* Info.plist */,
-				EFAFC20B2076AFE8005DF34A /* GameObject.swift */,
-				EFAFC2152076B5F3005DF34A /* StaticGround.swift */,
-				EFAFC21B2076B901005DF34A /* DeathZone.swift */,
-				EFAFC21D2076C084005DF34A /* Victory zone.swift */,
-				EFAFC21F2076C239005DF34A /* MovableObject.swift */,
-				EFAFC20F2076B04E005DF34A /* Player.swift */,
-				EFAFC2112076B4F6005DF34A /* Obsticle.swift */,
-				EFAFC2132076B543005DF34A /* Moving platform.swift */,
-				EFAFC2192076B8C5005DF34A /* GameObjectFactory.swift */,
 				EFAE1CB8207FE82900B3EAB7 /* Utilities */,
-				EFAE1CE0207FFA3300B3EAB7 /* GameObjectDB.swift */,
 			);
 			path = Crosser;
 			sourceTree = "<group>";

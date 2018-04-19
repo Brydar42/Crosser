@@ -15,8 +15,11 @@ class GameObject: SKSpriteNode {
         super.init(texture: texture, color: UIColor.clear, size: texture.size())
         self.position = startPosition
     }
-    
+    func Update(currentTime: TimeInterval) {
+        
+    }
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
 }

@@ -7,6 +7,10 @@
 //  this is for the second half of the game player loses on touch the water part of the game
 //
 import Foundation
+import SpriteKit
 class DeathZone: StaticGround {
-    
+    func Killplayer() {
+        //player lands here and dies
+    }
+    override var position: CGPoint
 }

@@ -7,6 +7,7 @@
 //  Lilypads from frogger
 
 import Foundation
+import SpriteKit
 class VictoryZone: StaticGround {
-    
+    //player touches this and wins
 }
