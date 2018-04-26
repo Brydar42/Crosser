@@ -30,8 +30,44 @@ class Obsticle: MovableObject {
     //override var vel : CGPoint?
     init(startPosition: CGPoint, type: ObsticleTypes) {
                     self.type = type
-        super.init(imageName: )
+        if (self.type==ObsticleTypes.Car) {
+            let CarNumber = arc4random_uniform(3)
+            switch CarNumber
+            {
+            case 0:
+                super.init(startPosition: startPosition, imageName: "car 1")
+                break
+            case 1:
+            super.init(startPosition: startPosition, imageName: "car 2")
+                break
+            case 2:
+            super.init(startPosition: startPosition, imageName: "car 3")
+                break
+            default:
+                break
+            }
+        }
+        //must be a truck
+        else
+        {
+            let TruckNumber = arc4random_uniform(2)
+            switch TruckNumber
+            {
+            case 0:
+                super.init(startPosition: startPosition, imageName: "Truck 1")
+                break
+            case 1:
+                super.init(startPosition: startPosition, imageName: "Truck 2")
+                break
+            default:
+                break
+            }
+        }
+        //super.init(startPosition: startPosition, imageName: imageName)
         //addTrailToVehicle()
+    }
+    func Killplayer() {
+        //player collides with enemy and dies
     }
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")

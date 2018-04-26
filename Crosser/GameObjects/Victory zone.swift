@@ -10,6 +10,12 @@ import Foundation
 import SpriteKit
 class VictoryZone: StaticGround {
     //player touches this and wins
+    override init(startPosition: CGPoint, imageName: String) {
+        super.init(startPosition: startPosition, imageName: "Safe")
+    }
     
-    //this.position = CGPoint(x:0,y:600)
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    //this.position = CGPoint(x:0,y:640)
 }

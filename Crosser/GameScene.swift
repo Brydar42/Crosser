@@ -10,7 +10,6 @@ import SpriteKit
 import GameplayKit
 
 class GameScene: SKScene {
-    
     var entities = [GKEntity]()
     var graphs = [String : GKGraph]()
     public var score=0.0;
@@ -47,6 +46,7 @@ class GameScene: SKScene {
         for entity in self.entities {
             entity.update(deltaTime: dt)
         }
+        //player.update(currentTime)
         
         self.lastUpdateTime = currentTime
     }

@@ -27,7 +27,16 @@ class MovingPlatform: MovableObject {
     //var vel : CGPoint?
     init(startPosition: CGPoint, type: PlatformTypes) {
         self.type = type
-        //super.init(imageName: Zombie.defaultTexture)
+        if (self.type==PlatformTypes.Turtle) {
+            super.init(startPosition: startPosition, imageName: "turtle 1")
+            
+        }
+        //praise log
+        else
+        {
+            super.init(startPosition: startPosition, imageName: "Log 3")
+        }
+        
     }
     
     required init?(coder aDecoder: NSCoder) {

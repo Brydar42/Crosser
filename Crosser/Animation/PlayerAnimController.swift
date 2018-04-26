@@ -7,6 +7,21 @@
 // built to support the player animations
 
 import Foundation
+import SpriteKit
 class PlayerAnimControler {
     
+    func PlayerJumpLeft()  {
+        // example animation using SKAction
+        
+        
+    }
+    func PlayerJumpRight()  {
+        
+    }
+    func PlayerJumpUp()  {
+        
+    }
+    func PlayerJumpDown()  {
+        
+    }
 }

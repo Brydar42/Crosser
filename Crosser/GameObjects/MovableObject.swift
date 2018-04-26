@@ -11,17 +11,16 @@ import Foundation
 import SpriteKit
 class MovableObject: GameObject {
     var vel : CGPoint?
-    func update(currentTime: TimeInterval) {
+    override init(startPosition: CGPoint, imageName: String) {
+        super.init(startPosition: startPosition, imageName: imageName)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    override func Update(currentTime: TimeInterval) {
         // calling super so we can use deltaTime recording in the super class
-        super.update(currentTime)
+        super.Update(currentTime: currentTime)
         
-        guard let direction = vel?.asUnitVector else {
-            return
-        }
-        
-        position = position.travel(inDirection: direction, atVelocity: type.speed, for: deltaTime)
-        if lookUpAction(Zombie.ActionDescriptionKeys.loopedWalkAnimation)?.state == .running {
-            position = position.travel(in: direction, at: type.speed, for: deltaTime)
-        }
     }
 }

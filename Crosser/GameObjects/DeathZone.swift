@@ -9,6 +9,13 @@
 import Foundation
 import SpriteKit
 class DeathZone: StaticGround {
+    init(startPosition: CGPoint) {
+        super.init(startPosition: startPosition, imageName: "water")
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     func Killplayer() {
         //player lands here and dies
     }
