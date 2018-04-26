@@ -11,7 +11,8 @@ import SpriteKit
 class VictoryZone: StaticGround {
     //player touches this and wins
     init(startPosition: CGPoint) {
-        super.init(startPosition: startPosition, imageName: "Safe")
+        super.init(startPosition: startPosition, imageName: "UnsafeZone")
+        self.scale(to: CGSize(width: 800, height: 100))
     }
     
     required init?(coder aDecoder: NSCoder) {

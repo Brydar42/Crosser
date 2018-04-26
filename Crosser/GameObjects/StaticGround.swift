@@ -16,6 +16,7 @@ class StaticGround: GameObject {
     let Shape = CGRect(x: 0,y:-320, width: 320,height: 320)
     override init(startPosition: CGPoint, imageName: String) {
         super.init(startPosition: startPosition,imageName: imageName)
+        self.scale(to: CGSize(width: 800, height: 700))
     }
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")

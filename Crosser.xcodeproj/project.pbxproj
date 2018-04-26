@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EF5C432A209245AD00F23BE5 /* DidGameEndObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5C4329209245AD00F23BE5 /* DidGameEndObserver.swift */; };
+		EF5C432C20927ADF00F23BE5 /* SpawnManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5C432B20927ADF00F23BE5 /* SpawnManager.swift */; };
 		EFAE1CC1207FF2A800B3EAB7 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAE1CC0207FF2A800B3EAB7 /* StoreKit.framework */; };
 		EFAE1CC3207FF2D200B3EAB7 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAE1CC2207FF2D200B3EAB7 /* libicucore.tbd */; };
 		EFAE1CC5207FF35700B3EAB7 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAE1CC4207FF35700B3EAB7 /* libsqlite3.tbd */; };
@@ -43,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		EF5C4329209245AD00F23BE5 /* DidGameEndObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DidGameEndObserver.swift; sourceTree = "<group>"; };
+		EF5C432B20927ADF00F23BE5 /* SpawnManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpawnManager.swift; sourceTree = "<group>"; };
 		EFAE1CB8207FE82900B3EAB7 /* Utilities */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Utilities; path = /Users/n01113752/Documents/GitHub/Crosser/Crosser/Utilities; sourceTree = "<absolute>"; };
 		EFAE1CC0207FF2A800B3EAB7 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		EFAE1CC2207FF2D200B3EAB7 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
@@ -181,6 +183,7 @@
 				EFAFC2052076AA1E005DF34A /* Info.plist */,
 				EFAE1CB8207FE82900B3EAB7 /* Utilities */,
 				EF5C4329209245AD00F23BE5 /* DidGameEndObserver.swift */,
+				EF5C432B20927ADF00F23BE5 /* SpawnManager.swift */,
 			);
 			path = Crosser;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 				EFAFC20C2076AFE8005DF34A /* GameObject.swift in Sources */,
 				EFAFC1FA2076AA1E005DF34A /* GameScene.swift in Sources */,
 				EFAFC2142076B543005DF34A /* Moving platform.swift in Sources */,
+				EF5C432C20927ADF00F23BE5 /* SpawnManager.swift in Sources */,
 				EFAFC21E2076C084005DF34A /* Victory zone.swift in Sources */,
 				EF5C432A209245AD00F23BE5 /* DidGameEndObserver.swift in Sources */,
 				EFAFC21C2076B901005DF34A /* DeathZone.swift in Sources */,

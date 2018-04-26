@@ -5,7 +5,7 @@
 //  Created by Rasmussen Darren K. on 4/5/18.
 //  Copyright © 2018 Rasmussen Darren K. All rights reserved.
 //  A factory dedicated to making Game Objecets
-// random araeas for ememys -400 x for all first half -560,-480, -400,-320, -240,-160 second half 80, 160, 320, 400, 560
+// random araeas for ememys -400 x for all
 import Foundation
 import SpriteKit
 struct GameObjectFactory {
@@ -30,6 +30,7 @@ struct GameObjectFactory {
     private func randomObsticle() -> Obsticle {
         let rand: UInt32 = arc4random_uniform(3)
         let ObjectType = ObsticleTypes(rawValue: rand)
+        var startPosition = CGPoint(x:-400,y:0)
         // forcing the unwrapping of zombieType with the "!"
         // we know that the ZombieType created will be either
         // 0, 1, 2 due to the "% 3" however
@@ -40,7 +41,29 @@ struct GameObjectFactory {
         // which is supressed with the "!"
         //pos1,pos2,pos3,pos4,pos5,pos6
         let rand2: UInt32 = arc4random_uniform(6)
-       var startPosition = CGPoint(x:-400,y:0)
+        switch rand2 {
+        case 0:
+            startPosition = CGPoint(x:-400,y:-560)
+            break
+        case 1:
+            startPosition = CGPoint(x:-400,y:-480)
+            break
+        case 2:
+            startPosition = CGPoint(x:-400,y:-400)
+            break
+        case 3:
+            startPosition = CGPoint(x:-400,y:-320)
+            break
+        case 4:
+            startPosition = CGPoint(x:-400,y:-240)
+            break
+        case 5:
+            startPosition = CGPoint(x:-400,y:-160)
+            break
+        default:
+            startPosition = CGPoint(x:-400,y:0)
+        }
+       
         //startPosition.x = -400
         return Obsticle(startPosition: startPosition, type: ObjectType!)
     }
@@ -51,6 +74,27 @@ struct GameObjectFactory {
             return randomPlatform()
         }
         var startPosition = CGPoint(x:-400,y:0)
+        let rand2: UInt32 = arc4random_uniform(5)
+        switch rand2 {
+        case 0:
+            startPosition = CGPoint(x:-400,y:80)
+            break
+        case 1:
+            startPosition = CGPoint(x:-400,y:160)
+            break
+        case 2:
+            startPosition = CGPoint(x:-400,y:320)
+            break
+        case 3:
+            startPosition = CGPoint(x:-400,y:400)
+            break
+        case 4:
+            startPosition = CGPoint(x:-400,y:560)
+            break
+        default:
+            startPosition = CGPoint(x:-400,y:0)
+        }
+        
         return MovingPlatform(startPosition:startPosition, type: PlatformType)
     }
     
@@ -69,7 +113,26 @@ struct GameObjectFactory {
         // this is considered unsafe hence the complier warning
         // which is supressed with the "!"
         var startPosition = CGPoint(x:-400,y:0)
-        //startPosition.x = -400
+        let rand2: UInt32 = arc4random_uniform(5)
+        switch rand2 {
+        case 0:
+            startPosition = CGPoint(x:-400,y:80)
+            break
+        case 1:
+            startPosition = CGPoint(x:-400,y:160)
+            break
+        case 2:
+            startPosition = CGPoint(x:-400,y:320)
+            break
+        case 3:
+            startPosition = CGPoint(x:-400,y:400)
+            break
+        case 4:
+            startPosition = CGPoint(x:-400,y:560)
+            break
+        default:
+            startPosition = CGPoint(x:-400,y:0)
+        }
         return MovingPlatform(startPosition:startPosition, type: PlatformType!)
     }
     

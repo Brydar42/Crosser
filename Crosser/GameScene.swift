@@ -28,6 +28,7 @@ class GameScene: SKScene {
         self.addChild(Ground)
         self.addChild(Water)
         self.addChild(Victory)
+        GameObjectFactory.init()
         
     }
     

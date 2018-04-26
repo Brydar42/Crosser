@@ -11,6 +11,7 @@ import SpriteKit
 class DeathZone: StaticGround {
     init(startPosition: CGPoint) {
         super.init(startPosition: startPosition, imageName: "water")
+        self.scale(to: CGSize(width: 800, height: 550))
     }
     
     required init?(coder aDecoder: NSCoder) {
