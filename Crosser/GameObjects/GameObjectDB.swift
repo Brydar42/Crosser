@@ -17,7 +17,7 @@ final class GameObjectDB
     enum DBErrors:Error {
         case noSchema
         case expectDictionary
-        //var  = <#value#>
+        
         
     }
     let dataBase: DatabaseReference

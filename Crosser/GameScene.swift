@@ -15,18 +15,20 @@ class GameScene: SKScene {
     public var score=0.0;
     private var lastUpdateTime : TimeInterval = 0
     private var label : SKLabelNode?
+    private var enemyspawner=GameObjectFactory()
     //private var spinnyNode : SKShapeNode?
-    private let player=Player();
+    private let player = Player()
+    //self.addChild(player)
+    private var Ground = StaticGround(startPosition:CGPoint(x: 0,y:-320),imageName:"ground");
+    private var Water = DeathZone(startPosition:CGPoint(x: 0,y:320));
+    private var Victory=VictoryZone(startPosition:CGPoint(x: 0,y:640))
     override func sceneDidLoad() {
-
         self.lastUpdateTime = 0
+        self.addChild(player)
+        self.addChild(Ground)
+        self.addChild(Water)
+        self.addChild(Victory)
         
-        // Get label node from scene and store it for use later
-        self.label = self.childNode(withName: "//helloLabel") as? SKLabelNode
-        if let label = self.label {
-            label.alpha = 0.0
-            label.run(SKAction.fadeIn(withDuration: 2.0))
-        }
     }
     
     

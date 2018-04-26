@@ -19,8 +19,7 @@ struct GameObjectFactory {
             
             return randomObsticle()
         }
-        var startPosition: CGPoint
-        startPosition.x = -400
+        var startPosition = CGPoint(x:-400,y:0)
         
         return Obsticle (startPosition: startPosition , type: Obsticles)
     }
@@ -41,8 +40,8 @@ struct GameObjectFactory {
         // which is supressed with the "!"
         //pos1,pos2,pos3,pos4,pos5,pos6
         let rand2: UInt32 = arc4random_uniform(6)
-        var startPosition: CGPoint
-        startPosition.x = -400
+       var startPosition = CGPoint(x:-400,y:0)
+        //startPosition.x = -400
         return Obsticle(startPosition: startPosition, type: ObjectType!)
     }
     func makeMovingPlatform( PlatformType: PlatformTypes?) -> MovingPlatform {
@@ -51,8 +50,7 @@ struct GameObjectFactory {
             
             return randomPlatform()
         }
-        var startPosition: CGPoint
-        startPosition.x = -400
+        var startPosition = CGPoint(x:-400,y:0)
         return MovingPlatform(startPosition:startPosition, type: PlatformType)
     }
     
@@ -70,8 +68,8 @@ struct GameObjectFactory {
         // and asks us to unwrap it.
         // this is considered unsafe hence the complier warning
         // which is supressed with the "!"
-        var startPosition: CGPoint
-        startPosition.x = -400
+        var startPosition = CGPoint(x:-400,y:0)
+        //startPosition.x = -400
         return MovingPlatform(startPosition:startPosition, type: PlatformType!)
     }
     

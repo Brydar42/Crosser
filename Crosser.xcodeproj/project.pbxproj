@@ -128,20 +128,6 @@
 			path = Factory;
 			sourceTree = "<group>";
 		};
-		EF5C43252092362400F23BE5 /* Animation */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Animation;
-			sourceTree = "<group>";
-		};
-		EF5C43262092362E00F23BE5 /* Particles */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Particles;
-			sourceTree = "<group>";
-		};
 		EFAE1CBF207FF2A800B3EAB7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -181,8 +167,6 @@
 		EFAFC1F22076AA1E005DF34A /* Crosser */ = {
 			isa = PBXGroup;
 			children = (
-				EF5C43262092362E00F23BE5 /* Particles */,
-				EF5C43252092362400F23BE5 /* Animation */,
 				EF0679CD2089399800A0FFFF /* GameObjects */,
 				EFAFC1F32076AA1E005DF34A /* AppDelegate.swift */,
 				EFAFC1F52076AA1E005DF34A /* GameScene.sks */,
