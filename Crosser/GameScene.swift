@@ -58,19 +58,19 @@ class GameScene: SKScene {
         }
         if(touch.location(in: self).y>0)
         {
-            Player.JumpUp()
+            player.JumpUp()
         }
         if(touch.location(in: self).y<0)
         {
-            Player.JumpDown()
+            player.JumpDown()
         }
         if(touch.location(in: self).x<0)
         {
-            Player.JumpLeft()
+            player.JumpLeft()
         }
         if(touch.location(in: self).x>0)
         {
-            Player.JumpRight()
+            player.JumpRight()
         }
         
         

@@ -5,7 +5,7 @@
 //  Created by Rasmussen Darren K. on 4/5/18.
 //  Copyright © 2018 Rasmussen Darren K. All rights reserved.
 //  A factory dedicated to making Game Objecets
-
+// random araeas for ememeys 400 x for all first half -560,-480, -400,-320, -240,-160 second half 80, 160, 320, 400, 560
 import Foundation
 struct GameObjectFactory {
     /// makes a Obsticle

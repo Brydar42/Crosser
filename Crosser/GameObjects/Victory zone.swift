@@ -10,5 +10,6 @@ import Foundation
 import SpriteKit
 class VictoryZone: StaticGround {
     //player touches this and wins
-    override var position: CGPoint(x:0,y:600)
+    
+    //this.position = CGPoint(x:0,y:600)
 }

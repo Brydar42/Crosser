@@ -16,16 +16,16 @@ class Player: GameObject {
         required init?(coder aDecoder: NSCoder) {
             fatalError("init(coder:) has not been implemented")
         }
-    func JumpUp() {
-        self.position.y+=20
+    public func JumpUp() {
+        self.position.y+=80
     }
-    func JumpDown() {
-        self.position.y-=20
+    public func JumpDown() {
+        self.position.y-=80
     }
-    func JumpLeft() {
-        self.position.x-=20
+    public func JumpLeft() {
+        self.position.x-=80
     }
-    func JumpRight() {
-        self.position.x+=20
+    public func JumpRight() {
+        self.position.x+=80
     }
 }

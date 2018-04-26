@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF5C4328209238C900F23BE5 /* PlayerAnimController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5C4327209238C900F23BE5 /* PlayerAnimController.swift */; };
 		EFAE1CC1207FF2A800B3EAB7 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAE1CC0207FF2A800B3EAB7 /* StoreKit.framework */; };
 		EFAE1CC3207FF2D200B3EAB7 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAE1CC2207FF2D200B3EAB7 /* libicucore.tbd */; };
 		EFAE1CC5207FF35700B3EAB7 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAE1CC4207FF35700B3EAB7 /* libsqlite3.tbd */; };
@@ -41,6 +42,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EF5C4327209238C900F23BE5 /* PlayerAnimController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerAnimController.swift; sourceTree = "<group>"; };
 		EFAE1CB8207FE82900B3EAB7 /* Utilities */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Utilities; path = /Users/n01113752/Documents/GitHub/Crosser/Crosser/Utilities; sourceTree = "<absolute>"; };
 		EFAE1CC0207FF2A800B3EAB7 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		EFAE1CC2207FF2D200B3EAB7 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
@@ -126,18 +128,19 @@
 			path = Factory;
 			sourceTree = "<group>";
 		};
-		EF0679CF20893CC200A0FFFF /* Particle */ = {
+		EF5C43252092362400F23BE5 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
+				EF5C4327209238C900F23BE5 /* PlayerAnimController.swift */,
 			);
-			path = Particle;
+			path = Animation;
 			sourceTree = "<group>";
 		};
-		EF0679D020893D8700A0FFFF /* Actions */ = {
+		EF5C43262092362E00F23BE5 /* Particles */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Actions;
+			path = Particles;
 			sourceTree = "<group>";
 		};
 		EFAE1CBF207FF2A800B3EAB7 /* Frameworks */ = {
@@ -179,8 +182,8 @@
 		EFAFC1F22076AA1E005DF34A /* Crosser */ = {
 			isa = PBXGroup;
 			children = (
-				EF0679D020893D8700A0FFFF /* Actions */,
-				EF0679CF20893CC200A0FFFF /* Particle */,
+				EF5C43262092362E00F23BE5 /* Particles */,
+				EF5C43252092362400F23BE5 /* Animation */,
 				EF0679CD2089399800A0FFFF /* GameObjects */,
 				EFAFC1F32076AA1E005DF34A /* AppDelegate.swift */,
 				EFAFC1F52076AA1E005DF34A /* GameScene.sks */,
@@ -282,6 +285,7 @@
 				EFAFC2162076B5F3005DF34A /* StaticGround.swift in Sources */,
 				EFAFC2202076C239005DF34A /* MovableObject.swift in Sources */,
 				EFAFC1FC2076AA1E005DF34A /* GameViewController.swift in Sources */,
+				EF5C4328209238C900F23BE5 /* PlayerAnimController.swift in Sources */,
 				EFAFC2102076B04E005DF34A /* Player.swift in Sources */,
 				EFAE1CE1207FFA3300B3EAB7 /* GameObjectDB.swift in Sources */,
 				EFAFC1F42076AA1E005DF34A /* AppDelegate.swift in Sources */,

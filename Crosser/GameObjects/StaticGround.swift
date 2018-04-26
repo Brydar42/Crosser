@@ -10,14 +10,14 @@
 
 import Foundation
 import SpriteKit
-class StaticGround: SKSpriteNode {
+class StaticGround: GameObject {
     
     
     let Shape = CGRect(x: 0,y:-320, width: 320,height: 320)
-    //init() {
-        //super.init(texture: , color: UIColor.clear, size:CGSize.init(width: 700, height: 700))
-    //}
-    //required init?(coder aDecoder: NSCoder) {
-    //    fatalError("init(coder:) has not been implemented")
-    //}
+    override init(startPosition: CGPoint, imageName: String) {
+        
+    }
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 }
